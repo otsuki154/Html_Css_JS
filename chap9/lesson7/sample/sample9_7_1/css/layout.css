@@ -1,0 +1,47 @@
+#wrapper .contents section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden
+}
+
+#wrapper .contents section p {
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    line-height: 1.4;
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 6px #666
+}
+
+#wrapper .contents section:nth-child(odd) p {
+    left: 10%
+}
+
+#wrapper .contents section:nth-child(even) p {
+    right: 10%
+}
+
+#wrapper .contents section#section01 {
+    background-image: url(../images/img01.jpg)
+}
+
+#wrapper .contents section#section02 {
+    background-image: url(../images/img02.jpg)
+}
+
+h1 {
+  font-size: 100px;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  color: #fff;
+}
