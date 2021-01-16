@@ -1,0 +1,9 @@
+Sử dụng anonymous function
+function toogle 
+css 
+transform: dễ code, có 2 chiều nhưng ít chuyển đôngj
+cách định nghĩa và dùng animation: có thể tạo nhiều điểm thay đổi, nhiều chuyển động hơn, 
+chuyển động thự do hơn, nhưng chỉ 1 chiều, muốn có 2 chiều thì phải xử lý ở sự kiện animation end
+
+Làm tiếp phần chuyển động 2 chiều với button số 2, bài 38
+Làm phần thông báo faceboook, tham khảo bài 49, 50

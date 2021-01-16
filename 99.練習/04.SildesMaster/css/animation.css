@@ -1,0 +1,121 @@
+/* CSS cho cac animation */
+/* ----------------------------------------- */
+.slides ul li.nextIn {
+  animation: nextIn 1s forwards;
+}
+.slides ul li.nextOut {
+  animation: nextOut 1s forwards;
+}
+.slides ul li.prevIn {
+  animation: prevIn 1s forwards;
+}
+.slides ul li.prevOut {
+  animation: prevOut 1s forwards;
+}
+.slides ul li.nextIn2 {
+  animation: nextIn2 1s forwards;
+}
+.slides ul li.nextOut2 {
+  animation: nextOut2 1s forwards;
+}
+.slides ul li.prevIn2 {
+  animation: prevIn2 1s forwards;
+}
+.slides ul li.prevOut2 {
+  animation: prevOut2 1s forwards;
+}
+/* ----------------------------------------- */
+/* Định nghĩa các animaton */
+/* ----------------------------------------- */
+@-webkit-keyframes nextIn {
+  /* animation 1 */
+  from {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes nextOut {
+  /* animation 1 */
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0.2;
+  }
+}
+@-webkit-keyframes nextIn2 {
+  /* animation 1 */
+
+  from {
+    transform: translateX(-100%) rotateY(-90deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes nextOut2 {
+  from {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%) scale(0.9);
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes prevIn {
+  /* animation 1 */
+  from {
+    transform: scale(2);
+    opacity: 0.2;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes prevOut {
+  /* animation 1 */
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes prevIn2 {
+  from {
+    transform: translateX(100%) scale(0.9);
+    opacity: 0.2;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes prevOut2 {
+  /* animation 1 */
+  from {
+    transform: translateX(0%) rotateY(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%) rotateY(-90deg);
+    opacity: 0;
+  }
+}
+/* ----------------------------------------- */

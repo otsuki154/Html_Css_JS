@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.list-group {
+  margin-top: 10px;
+}
+
+i.fa.fa-user {
+  font-size: 25px;
+  /* color: aquamarine; */
+}
+
+.dekick {
+  /* font-size: 17px; */
+}
+
+._1khoi {
+  width: 200px;
+  margin: auto;
+  margin-top: 10px;
+  float: left;
+}
+
+.thanhxanh {
+  height: 50px;
+  background: #0e458a;
+}
+.list-group::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 9px cadetblue solid;
+  border-bottom-color: #ffffff;
+  left: 160px;
+  top: 31px;
+}
