@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var animationEnd = 0;
 
   /**
+   * Thuc hien viec chuyen slide
    * @param isLeft:button trai true, button phai la false
    * @param classIn : classCss cho chieu vao
    * @param classOut : classCss cho chieu ra
@@ -60,56 +61,17 @@ document.addEventListener("DOMContentLoaded", function () {
   var goNext = function () {
     var e = document.getElementById("selectId");
     var value = e.options[e.selectedIndex].value;
-    var classIn = "";
-    var classOut = "";
-    switch (value) {
-      case "1":
-        classIn = "nextIn";
-        classOut = "nextOut";
-        break;
-      case "2":
-        classIn = "nextIn2";
-        classOut = "nextOut2";
-        break;
-      case "3":
-        classIn = "nextIn3";
-        classOut = "nextOut3";
-        break;
-      case "4":
-        classIn = "nextIn4";
-        classOut = "nextOut4";
-        break;
-      default:
-        break;
-    }
+    var classIn = "nextIn" + value;
+    var classOut = "nextOut" + value;
+
     goNewSlide(false, classIn, classOut);
   };
   //   hàm sử lý sự kiện click button previous
   var goPrev = function () {
     var e = document.getElementById("selectId");
     var value = e.options[e.selectedIndex].value;
-    var classIn = "";
-    var classOut = "";
-    switch (value) {
-      case "1":
-        classIn = "prevIn";
-        classOut = "prevOut";
-        break;
-      case "2":
-        classIn = "prevIn2";
-        classOut = "prevOut2";
-        break;
-      case "3":
-        classIn = "prevIn3";
-        classOut = "prevOut3";
-        break;
-      case "4":
-        classIn = "prevIn4";
-        classOut = "prevOut4";
-        break;
-      default:
-        break;
-    }
+    var classIn = "prevIn" + value;
+    var classOut = "prevOut" + value;
     goNewSlide(true, classIn, classOut);
   };
 

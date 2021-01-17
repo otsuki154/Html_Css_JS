@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+.sildewrap,
+.slides,
+.slides ul,
+.slides ul li {
+  height: 100%;
+  width: 100%;
+}
+
+.sildewrap {
+  position: relative;
+}
+.slides {
+  background-color: rgb(46, 36, 34);
+  perspective: 800px; /* phai de o phan tu cha, gia tri cang nho thi chuyen dong cang sau */
+}
+.slides ul {
+  position: relative;
+  overflow: hidden;
+}
+.slides ul li {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-size: cover;
+  opacity: 0;
+}
+
+.slides ul li.display {
+  opacity: 1;
+}
+
+.nuts {
+  position: absolute;
+  right: calc(50% - 50px);
+  top: 90%;
+  z-index: 100;
+}
+
+.nuts b {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 60px;
+  color: rgb(141, 142, 145);
+}
+
+.nuts .leftbtn:hover {
+  color: rgb(47, 53, 71);
+  transition: 0.4s;
+}
+.nuts .rightbtn:hover {
+  color: rgb(47, 53, 71);
+  transition: 0.4s;
+}
+.effect select {
+  position: absolute;
+  left: calc(50% - 100px);
+  top: 85%;
+  height: 30px;
+  width: 200px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: transparent;
+  font-size: large;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 10px;
+  /* text-align: center; */
+  padding-left: 30px;
+}
+
+.effect:hover select {
+  border: 2px solid rgb(99, 31, 31);
+  color: rgb(53, 190, 145);
+}
