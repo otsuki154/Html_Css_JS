@@ -60,7 +60,7 @@ body,
 .effect select {
   position: absolute;
   left: calc(50% - 100px);
-  top: 85%;
+  top: 5%;
   height: 30px;
   width: 200px;
   background-color: transparent;

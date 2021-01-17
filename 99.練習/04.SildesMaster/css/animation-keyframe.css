@@ -1,0 +1,278 @@
+/* ----------------------------------------- */
+/* Định nghĩa các animaton */
+/* ----------------------------------------- */
+@-webkit-keyframes nextIn1 {
+  from {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes nextOut1 {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0.2;
+  }
+}
+@-webkit-keyframes prevIn1 {
+  from {
+    transform: scale(2);
+    opacity: 0.2;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes prevOut1 {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+}
+/* ----------------------------------------- */
+@-webkit-keyframes nextIn2 {
+  from {
+    transform: translateX(-100%) rotateY(-90deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes nextOut2 {
+  from {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%) scale(0.9);
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes prevIn2 {
+  from {
+    transform: translateX(100%) scale(0.9);
+    opacity: 0.2;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes prevOut2 {
+  from {
+    transform: translateX(0%) rotateY(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%) rotateY(-90deg);
+    opacity: 0;
+  }
+}
+/* ----------------------------------------- */
+@-webkit-keyframes nextIn3 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes nextOut3 {
+  from {
+    z-index: 10;
+    height: 100%;
+  }
+  to {
+    z-index: 10;
+    height: 0%;
+  }
+}
+
+@-webkit-keyframes prevIn3 {
+  from {
+    z-index: 10;
+    height: 0%;
+    opacity: 1;
+  }
+  to {
+    z-index: 10;
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes prevOut3 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* ----------------------------------------- */
+@-webkit-keyframes nextIn4 {
+  from {
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes nextOut4 {
+  from {
+    z-index: 10;
+    transform: translateY(0%);
+  }
+  to {
+    z-index: 10;
+    transform: translateY(100%);
+  }
+}
+
+@-webkit-keyframes prevIn4 {
+  to {
+    z-index: 10;
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  from {
+    z-index: 10;
+    transform: translateY(100%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes prevOut4 {
+  to {
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+  from {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+/* ----------------------------------------- */
+@-webkit-keyframes nextIn5 {
+  from {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 10;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+    z-index: 10;
+  }
+}
+
+@-webkit-keyframes nextOut5 {
+  from {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-10%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes prevIn5 {
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+    z-index: 11;
+  }
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+    z-index: 11;
+  }
+}
+
+@-webkit-keyframes prevOut5 {
+  to {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+  from {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+@-webkit-keyframes nextIn6 {
+  from {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 10;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+    z-index: 10;
+  }
+}
+
+@-webkit-keyframes nextOut6 {
+  from {
+    transform-origin: 0 0;
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  to {
+    transform-origin: 0 0;
+    transform: rotateY(10deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes prevIn6 {
+  from {
+    transform: translateX(-100%);
+    opacity: 1;
+    z-index: 10;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+    z-index: 10;
+  }
+}
+
+@-webkit-keyframes prevOut6 {
+  from {
+    transform-origin: 100% 0%;
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  to {
+    transform-origin: 100% 0%;
+    transform: rotateY(-10deg);
+    opacity: 1;
+  }
+}
+/* ----------------------------------------- */
