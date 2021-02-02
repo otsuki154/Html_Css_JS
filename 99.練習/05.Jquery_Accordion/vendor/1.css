@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  background-color: #dfe6e9 !important;
+}
+
 .oneblock h3 {
   background-color: #16a085;
   text-align: left;
@@ -10,6 +14,7 @@
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   margin-bottom: 0px;
+  border: #053535 solid 1px;
 }
 
 .oneblock h3:hover {
@@ -18,7 +23,7 @@
 }
 
 .oneblock h3.clickedCss {
-  background-color: #6c5ce7;
+  background-color: #fdcb6e;
   color: #68050d;
 }
 .accordionBlock {
@@ -32,5 +37,5 @@
 .contents {
   text-align: left;
   padding: 10px;
-  background-color: aliceblue;
+  background-color: #40739e;
 }
