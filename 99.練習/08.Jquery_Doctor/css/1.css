@@ -27,7 +27,9 @@
 .menu {
   width: 70%;
   height: 60px;
-  background-color: azure;
+  background-color: rgba(217, 243, 243, 0.719);
+  border-radius: 5px;
+  box-shadow: 0 2px 2px #4d6664;
   position: absolute;
   top: 5%;
   left: 20%;
