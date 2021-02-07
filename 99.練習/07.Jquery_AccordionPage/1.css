@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(image/bg.jpeg);
+}
+
+._1khoi {
+  width: 30%;
+  margin: auto;
+}
+
+.tieude {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(24, 131, 173);
+  border-radius: 10px;
+  border-bottom: white 1px solid;
+  position: relative;
+}
+
+.tieude:hover {
+  background-color: rgb(4, 87, 90);
+}
+.tentd {
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  font-family: "Love Ya Like A Sister", cursive;
+  color: white;
+  float: left;
+}
+
+.tieude i {
+  font-size: 30px;
+  display: inline-block;
+  right: 5%;
+  top: 20%;
+  color: white;
+  position: absolute;
+  transition: 0.4s;
+}
+.tieude i.rotate {
+  transform: rotateX(180deg);
+}
+
+.cachinh a img {
+  width: 19%;
+  margin: 10px 0px;
+}
+
+.cachinh a {
+  width: 300px;
+  /* margin: 10px 0px; */
+}
+
+.khoinoidung {
+  background-color: azure;
+}
+
+.cackhoi {
+  margin-top: 2%;
+}
+
+.titleTop {
+  width: 30%;
+  margin: auto;
+  margin-top: 50px;
+  padding-left: 4%;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+}

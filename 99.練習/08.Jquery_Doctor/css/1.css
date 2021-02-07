@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.top {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+.anhnen {
+  height: 100%;
+  width: 100%;
+  transition: 0.4s;
+  animation: phongto 1s forwards;
+}
+
+@-webkit-keyframes phongto {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.menu {
+  width: 70%;
+  height: 60px;
+  background-color: azure;
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  z-index: 10;
+  text-align: center;
+  /* list-style: none; */
+}
+.menu ul li {
+  list-style: none;
+  float: right;
+  padding: 10px 30px;
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgba(63, 163, 157, 0.774);
+}
+
+.chulon,
+.chunho {
+  width: 30%;
+  height: 80px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  font-size: 40px;
+  font-family: "Love Ya Like A Sister", cursive;
+  color: rgba(63, 163, 157, 0.774);
+  opacity: 0;
+  text-align: center;
+  transition: 0.4s;
+  animation: quaphai 0.4s forwards;
+  animation-delay: 0.5s;
+}
+.chunho {
+  top: 50%;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+  transition: 0.4s;
+  animation: quaphai 0.4s forwards;
+  animation-delay: 0.7s;
+}
+@-webkit-keyframes quaphai {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.bacsi {
+  position: absolute;
+  right: 10%;
+  bottom: -50px;
+  transition: 0.4s;
+  animation: dilen 1s forwards;
+}
+@-webkit-keyframes dilen {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.nut {
+  width: 140px;
+  height: 40px;
+  background-color: rgba(9, 123, 131, 0.363);
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  opacity: 0;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 5px;
+  animation: quaphai 0.4s forwards;
+  animation-delay: 0.9s;
+}
+.nut a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.nut:hover {
+  background-color: rgba(9, 123, 131, 0.616);
+}
+
+.nut:hover a {
+  color: rgba(168, 168, 9, 0.808);
+}
