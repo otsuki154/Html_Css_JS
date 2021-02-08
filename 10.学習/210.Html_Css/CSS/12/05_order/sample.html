@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+.flexbox-container {
+    display: flex;
+    flex-wrap:wrap;
+}
+.flexbox-item-1{
+    order: 1;
+}
+.flexbox-item-2{
+    order: -1;
+}
+.flexbox-item-5{
+    order: 2;
+}
+.flexbox-item{
+    /* color: #fff; */
+    font-weight: bold;
+    border: 1px solid #000;
+    padding: 25px;
+}
+/* .flexbox-item:nth-child(odd){
+    background-color: #6cbb5a;
+}
+.flexbox-item:nth-child(even){
+    background-color: #7fcef4;
+} */
+.order{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+}
+    </style>
+    <title>order</title>
+</head>
+
+<body>
+
+<section class="flexbox-container">
+    <div class="flexbox-item flexbox-item-1">flexboxアイテム1<span class="order">order: 1</span></div>
+    <div class="flexbox-item flexbox-item-2">flexboxアイテム2<span class="order">order: -1</span></div>
+    <div class="flexbox-item flexbox-item-3">flexboxアイテム3<span class="order">order: 0</span></div>
+    <div class="flexbox-item flexbox-item-4">flexboxアイテム4<span class="order">order: 0</span></div>
+    <div class="flexbox-item flexbox-item-5">flexboxアイテム5<span class="order">order: 2</span></div>
+</section>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+/* 装飾のスタイル */
+p{
+  background-color: #ddd;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.section1 p:nth-of-type(4){
+    background-color: #00a5de; /* 水色 */
+}
+.section2 p:nth-child(4){
+    background-color: #00a5de; /* 水色 */
+}
+  </style>
+  <title>E:nth-of-type(n)</title>
+</head>
+
+<body>
+
+
+<section class="section1">
+  <h2>:nth-of-type(n)の場合</h2>
+  <p>1番目のp要素</p>
+  <p>2番目のp要素</p>
+  <h3>小見出し</h3>
+  <p>3番目のp要素</p>
+  <p>4番目のp要素</p>
+</section>
+
+<section class="section2">
+  <h2>:nth-child(n)の場合</h2>
+  <p>1番目のp要素</p>
+  <p>2番目のp要素</p>
+  <h3>小見出し</h3>
+  <p>3番目のp要素</p>
+  <p>4番目のp要素</p>
+</section>
+
+
+</body>
+</html>

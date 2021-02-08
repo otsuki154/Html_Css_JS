@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.contents {
+  counter-reset: number 0;
+}
+.contents_list li:before {
+  counter-increment: number 1;
+  content: "Chapter" counter(number) ": ";
+}
+.contents_list{
+    list-style: none;
+}
+</style>
+  <title>counter()関数</title>
+</head>
+<body>
+
+<section class="contents">
+  <h1>HTML5とCSS3</h1>
+  <ol class="contents_list">
+    <li><a href="">HTML5について</a></li>
+    <li><a href="">CSS3について</a></li>
+  </ol>
+</section>
+
+</body>
+</html>

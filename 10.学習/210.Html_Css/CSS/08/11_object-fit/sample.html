@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<style type="text/css">
+body {
+  padding: 200px;
+}
+hr {
+  margin: 100px;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    background-color: #eee;
+}
+.fill{
+    object-fit:fill;
+}
+.contain{
+    object-fit:contain;
+}
+.cover{
+    object-fit:cover;
+}
+.none{
+    object-fit:none;
+}
+.scale-down{
+    object-fit:scale-down;
+}
+
+
+</style>
+<title>object-fit</title>
+</head>
+
+<body>
+
+
+<h1>fill</h1>
+<img src="./pic.jpg" alt="" class="fill">
+
+<h1>contain</h1>
+<img src="./pic.jpg" alt="" class="contain">
+
+<h1>cover</h1>
+<img src="./pic.jpg" alt="" class="cover">
+
+<h1>none</h1>
+<img src="./pic.jpg" alt="" class="none">
+
+<h1>scale-down</h1>
+<img src="./pic.jpg" alt="" class="scale-down">
+
+
+
+</body>
+
+</html>

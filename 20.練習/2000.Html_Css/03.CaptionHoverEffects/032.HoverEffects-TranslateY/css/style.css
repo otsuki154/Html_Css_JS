@@ -1,0 +1,84 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+div.toankhoi {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+}
+
+img.layer1 {
+  width: 400px;
+}
+
+div.layer2 {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #2c3f52;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+p.tieude {
+  font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+  font-family: Tahoma, sans-serif;
+  display: block;
+  margin-top: 80px;
+  margin-bottom: 5px;
+}
+
+p.tacgia {
+  font-size: 15px;
+  color: #ed4e6e;
+  font-family: Tahoma, sans-serif;
+  display: block;
+  margin-top: -5px;
+}
+
+a.button {
+  display: inline-block;
+  background-color: #ed4e6e;
+  padding: 5px;
+  margin-top: 0px;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+  opacity: 0;
+  border-radius: 3px;
+  /* border: solid 1px black; */
+  transition: 0.3s;
+  position: absolute;
+  bottom: 130px;
+  left: 152px;
+  transition-delay: 0.3s;
+  transform: translateY(200px);
+}
+
+div.toankhoi:hover .layer2 {
+  top: 15px;
+  left: 15px;
+  opacity: 1;
+}
+
+div.toankhoi:hover .button {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.button:hover {
+  background-color: transparent;
+  color: rgb(148, 9, 141);
+}

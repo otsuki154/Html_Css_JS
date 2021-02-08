@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>canvas要素</title>
+</head>
+<body>
+
+<canvas width="500" height="300" id="main" style="border:1px solid #008fde"></canvas>
+
+<script>
+var canvas = document.getElementById('main');
+if (canvas.getContext) {
+    var context = canvas.getContext('2d');
+    //全体の透明度
+    context.globalAlpha = 0.8;
+    //円1
+    context.beginPath();
+    context.fillStyle = '#00a5de';
+    //左から150、上から150の位置に半径80の円を描く
+    context.arc(150, 150, 80, 0, Math.PI * 2.0, true);
+    context.fill();
+
+    //円2
+    context.beginPath();
+    context.fillStyle = '#f5ac0f';
+    //左から280、上から150の位置に半径80の円を描く
+    context.arc(280, 150, 80, 0, Math.PI * 2.0, true);
+    context.fill();
+}
+</script>
+
+
+</body>
+</html>

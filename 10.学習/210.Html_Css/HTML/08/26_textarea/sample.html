@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+form label{
+    font-size: 12px;
+}
+form textarea{
+    margin: 5px 0;
+    padding: 5px;
+    display: block;
+}
+</style>
+  <title>textarea要素</title>
+</head>
+<body>
+
+<form method="post" action="">
+  <div>
+    <label for="detail">お問い合わせ内容</label>
+    <textarea name="content" placeholder="お気軽にご相談ください。" id="detail" cols="50" rows="5"></textarea>
+  </div>
+  <button>確認画面へ</button>
+</form>
+
+
+<form method="post" action="">
+  <div>
+    <label for="detail">お問い合わせ内容</label>
+    <textarea name="content" id="detail" cols="50" rows="5" readonly>
+      品切れ商品の入荷にいつになりますか？
+    </textarea>
+  </div>
+  <button>送信する</button>
+</form>
+
+
+<form method="post" action="">
+  <div>
+    <label for="detail">お問い合わせ内容</label>
+    <textarea name="content" id="detail" cols="50" rows="5" readonly>
+品切れ商品の入荷にいつになりますか？
+    </textarea>
+  </div>
+  <button>送信する</button>
+</form>
+
+</body>
+</html>

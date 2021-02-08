@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+form label{
+    font-size: 12px;
+}
+form input,
+form output
+{
+    margin: 5px 0;
+    padding: 5px;
+}
+</style>
+  <title>output要素</title>
+</head>
+<body>
+
+<form method="post" action="" oninput="result.value = parseInt(price.value) * parseInt(quantity.value)">
+  <div>
+    <label for="price">値段</label>
+    <input type="number" name="price" value="1200" id="price" readonly>円
+  </div>
+  <div>
+    <label for="quantity">数量</label>
+    <input type="number" name="quantity" value="3" min="1" max="10" id="quantity">
+  </div>
+  <div>
+    合計: <output name="result" for="price quantity">3600</output>円
+  </div>
+  <input type="submit" value="送信する">
+</form>
+
+</body>
+</html>

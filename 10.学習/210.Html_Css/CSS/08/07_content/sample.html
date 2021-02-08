@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<style type="text/css">
+body {
+  padding: 200px;
+}
+hr {
+  margin: 100px;
+}
+
+.more::after{
+    content: "▶";
+}
+
+.time::before{
+    content: attr(data-new);
+    color: red;
+    font-size:12px;
+    margin-right: 5px;
+}
+</style>
+<title>content</title>
+</head>
+
+<body>
+
+<p><a href="#" class="more">続きはコチラ</a></p>
+
+
+<time class="time" data-new="NEW">2018/1/1</time>
+
+
+</body>
+
+</html>

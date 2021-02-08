@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+
+ </style>
+  <title>dialog要素</title>
+</head>
+<body>
+
+
+<dialog id="dialog">
+ <p>ダイアログです</p>
+</dialog>
+
+<button type="button" id="btnShow">ダイアログを表示</button>
+<button type="button" id="btnClose">ダイアログを閉じる</button>
+
+<script>
+// ダイアログのオブジェクト
+var dialog = document.querySelector('dialog');
+// 表示ボタン
+var btnShow = document.getElementById('btnShow');
+btnShow.addEventListener('click', function() {
+    dialog.show();
+}, false);
+// 閉じるボタン
+var btnClose = document.getElementById('btnClose');
+btnClose.addEventListener('click', function() {
+    dialog.close();
+}, false);
+</script>
+
+</body>
+</html>

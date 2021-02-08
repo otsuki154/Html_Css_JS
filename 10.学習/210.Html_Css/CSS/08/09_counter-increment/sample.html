@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<style type="text/css">
+body {
+  padding: 200px;
+}
+hr {
+  margin: 100px;
+}
+
+.ranking_list li{
+    counter-increment: ranking 1;
+}
+.ranking_list li::before{
+    content: counter(ranking);
+}
+</style>
+<title>counter-increment</title>
+</head>
+
+<body>
+
+<ul class="ranking_list">
+    <li>位: 山田一郎</li>
+    <li>位: 安藤花子</li>
+    <li>位: 技術太朗</li>
+    <li>位: 鈴木巌</li>
+    <li>位: 森田幸代</li>
+</ul>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+form label{
+    font-size: 12px;
+}
+form input{
+    margin: 5px 0;
+    padding: 5px;
+}
+</style>
+  <title>input要素 hidden属性</title>
+</head>
+<body>
+
+<form method="post" action="">
+  <input type="hidden" name="type" value="vip">
+  <div>
+    <label for="fullname">お名前</label>
+    <input type="text" name="fullname" placeholder="山田太郎" id="fullname">
+  </div>
+  <input type="submit" value="送信する">
+</form>
+
+</body>
+</html>

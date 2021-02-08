@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>progress要素</title>
+</head>
+<body>
+
+<p>データ処理状況</p>
+<progress id="progress" value="0" max="100">Loading...</progress>
+<output id="result" for="progress">0</output>％
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>
+jQuery(function($) {
+  var intervalID = setInterval(function() {
+      var current_value = $('#progress').val() + 10;
+      $('#progress, #result').val(current_value);
+      if (current_value >= 100) {　
+        clearInterval(intervalID);　
+      }
+    }, 1000);
+});
+</script>
+</body>
+</html>

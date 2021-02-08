@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a.baokhoinho {
+  height: 210px;
+  width: 280px;
+  display: block; /* thẻ a phải có display:block thì mới hiểu được các thuộc tính height, width, margin... */
+  position: relative; /* để chia layer thì thẻ bố phải là relative */
+  text-decoration: none;
+  overflow: hidden;
+  padding: 5px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  float: left;
+}
+
+a img.hinhtin {
+  width: 280px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+div.khungmo {
+  height: 210px;
+  width: 280px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background-image: -webkit-linear-gradient(#ffffff2e, #000000b3);
+  transition: 0.5s;
+}
+
+div.tieude {
+  width: 260px;
+  position: absolute;
+  bottom: -150px;
+  left: 0px;
+  z-index: 3;
+  color: rgb(229, 252, 252);
+  font-family: "Dancing Script", cursive;
+  line-height: 20px;
+  font-size: 20px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+a.baokhoinho:hover div.khungmo {
+  opacity: 0.5;
+}
+
+a.baokhoinho:hover div.tieude {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* css cho khoi to */
+a.baokhoito {
+  height: 425px;
+  width: 565px;
+}
+
+div.khungmoto {
+  height: 425px;
+  width: 565px;
+}
+a img.hinhtinto {
+  height: 425px;
+  width: 565px;
+}
+div.tieudeto {
+  width: 565px;
+  line-height: 30px;
+  font-size: 30px;
+}
+
+/* css cho khoi to nhat */
+div.tonhat {
+  height: 660px;
+  width: 1165px;
+  /* float: left; */
+  margin: auto;
+  /* background-color: black; */
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<style type="text/css">
+body {
+  padding: 200px;
+}
+hr {
+  margin: 100px;
+}
+
+.wrapper {
+  perspective: 300px;
+  border: 1px solid black;
+}
+.block {
+  transform-style:preserve-3d;
+  transform: rotateY(30deg);
+  background-color: #b8e3e9;
+  width: 150px;
+  height: 150px;
+}
+.child {
+  transform: rotateX(60deg);
+  transform-origin: left top;
+  background-color: #f6a9bb;
+  width: 150px;
+  height: 150px;
+}
+</style>
+<title>transform-style</title>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="block">
+        <div class="child"></div>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>

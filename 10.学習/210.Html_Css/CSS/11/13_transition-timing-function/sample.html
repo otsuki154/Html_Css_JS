@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <style type="text/css">
+
+.btn{
+  background-color: #7fcef4;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+
+  border:none ;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 5px;
+}
+.btn:hover{
+  background-color: #b8e3e9;
+}
+
+.box{
+    padding: 20px;
+    background-color: #f6a9bb;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.5,0.1,0.5,0.1);
+}
+.box.large{
+    padding: 100px;
+    background-color: #b8e3e9;
+}
+  </style>
+  <title>transition-timing-function</title>
+</head>
+
+<body>
+
+<button class="btn">お問い合わせ</button>
+
+
+<hr>
+
+<div class="box">ボックス</div>
+<button class="js-btn">ボックスを大きする</button>
+
+
+<script>
+jQuery(function($){
+    $('.js-btn').on('click', function(){
+        $('.box').addClass('large');
+    });
+});
+</script>
+</body>
+</html>

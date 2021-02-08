@@ -1,0 +1,18 @@
+.khoi {
+  margin: 100px;
+  height: 300px;
+  width: 400px;
+  background-color: #7fffd4;
+  border-radius: 10px;
+}
+
+.khoi::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 13px white solid;
+  border-bottom-color: #7fffd4;
+  left: 448px;
+  top: 74px;
+}

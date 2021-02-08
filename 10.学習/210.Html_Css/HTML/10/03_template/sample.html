@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+
+ </style>
+  <title>template要素</title>
+</head>
+<body>
+
+
+<input type="text" id="title">
+<button id="btnAdd">追加する</button>
+<ul id="todo"></ul>
+
+<template id="template">
+  <li>
+    <time>h時m分s秒</time>
+    <span>ここに入力されたtitleが入ります</span>
+  </li>
+</template>
+
+<script>
+// 要素を取得
+var template = document.getElementById('template');
+var title = document.getElementById('title');
+var todo = document.getElementById('todo');
+// ボタンを押したときの処理
+document.getElementById('btnAdd').addEventListener('click', function () {
+    // templateから要素を複製する
+    var clone = document.importNode(template.content, true);
+    // フォームに入力されたテキストを<span>に入れる
+    clone.querySelector('span').textContent = title.value;
+    // 現在時間を<time>に入れる
+    var now = new Date();
+    clone.querySelector('time').textContent = now.getHours() + "時" + now.getMinutes() + "分" + now.getSeconds() + "秒";
+    // 複製した要素をリストに追加する
+    todo.insertBefore(clone, todo.firstChild);
+    // titleの値を空にする
+    title.value = '';
+});
+</script>
+</body>
+</html>

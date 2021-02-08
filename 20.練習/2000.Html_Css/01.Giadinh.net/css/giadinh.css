@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.giadinh {
+  width: 430px;
+  height: 370px;
+  margin: auto;
+  padding-top: 20px;
+  overflow: hidden;
+}
+.tieude {
+  text-align: center;
+  border-top: #ffa50080 3px solid;
+}
+
+.tieude a {
+  font-size: 27px;
+  color: #fbd286;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  top: 20px;
+  background-color: white;
+  padding: 0px 10px;
+}
+
+.tieude .vien {
+  border-top: solid grey 1px;
+  border-bottom: solid grey 3px;
+  height: 3px;
+}
+
+/* css khoi tin */
+.tin {
+  margin-top: 20px;
+}
+
+.tin img {
+  float: left;
+  margin-right: 10px;
+  border: solid 1px rgb(233, 230, 230);
+  padding: 2px;
+  box-shadow: 3px 3px 0px rgb(202, 200, 200);
+}
+
+.tin .tdtin {
+  text-decoration: none;
+  font-size: 20px;
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  line-height: 15px;
+  color: black;
+}
+
+.tin p {
+  font-size: 14px;
+  color: grey;
+  margin-top: 10px;
+}
+.dstin {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.dstin ul li {
+  list-style: none;
+  border-bottom: dotted rgb(209, 205, 205) 1px;
+  padding: 10px 0px;
+  /* display: block; */
+}
+
+.dstin i {
+  font-size: 5px;
+  color: orange;
+  margin-right: 3px;
+  position: relative;
+  top: -3px;
+}
+
+.dstin a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}

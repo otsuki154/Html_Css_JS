@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+img.middle{
+    vertical-align: middle;
+}
+
+table{
+    border: 1px solid #ddd;
+}
+table td,
+table th{
+    border: 1px solid #ddd;
+    width: 200px;
+    height: 200px;
+}
+
+.top{
+    vertical-align: top;
+}
+.middle{
+    vertical-align: middle;
+}
+.bottom{
+    vertical-align: bottom;
+}
+  </style>
+  <title>vertical-align</title>
+</head>
+<body>
+
+<h1>&lt;img&gt;にmiddleを指定</h1>
+<p>縦方向の揃え位置<img src="./green-circle.png" alt="" class="middle"></p>
+
+<h1>指定なし</h1>
+<p>縦方向の揃え位置<img src="./green-circle.png" alt=""></p>
+
+<table>
+  <tr>
+    <td class="top">上端の位置</td>
+    <td class="middle">中央の位置</td>
+    <td class="bottom">下端の位置</td>
+  </tr>
+</table>
+
+</body>
+</html>

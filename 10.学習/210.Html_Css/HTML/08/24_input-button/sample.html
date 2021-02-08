@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>input要素 button属性</title>
+</head>
+<body>
+
+<p>ボタンを押すと画面を更新します。</p>
+<input type="button" value="更新する" class="js-reload">
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>
+jQuery(function($){
+  $('.js-reload').on('click', function(){
+     location.reload(true) ;
+  });
+});
+</script>
+</body>
+</html>

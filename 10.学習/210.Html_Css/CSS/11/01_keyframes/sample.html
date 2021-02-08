@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<style type="text/css">
+body {
+  padding: 200px;
+}
+hr {
+  margin: 100px;
+}
+@keyframes changeTiming {
+    0% {
+        width: 300px;
+        background-color: #f39a50;
+    }
+    50% {
+        width: 500px;
+        background-color: #f6a9bb;
+    }
+    100% {
+        background-color: #f39a50;
+        width: 300px;
+    }
+}
+.animation{
+    animation-name: changeTiming;
+    animation-duration: 10s;
+    height: 200px;
+}
+
+</style>
+<title>keyframes</title>
+</head>
+
+<body>
+
+<div class="animation"></div>
+
+
+
+
+</body>
+
+</html>

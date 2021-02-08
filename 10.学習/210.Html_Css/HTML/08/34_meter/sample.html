@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+caption{
+    white-space: nowrap;
+    font-weight: bold;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+  empty-cells:show;
+  font-size:inherit;
+}
+table td,th{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+ </style>
+  <title>meter要素</title>
+</head>
+<body>
+
+<table>
+  <caption>インフルエンザ予防の適切な湿度</caption>
+  <tr>
+    <th>今日</th>
+    <td>30% (低すぎます)</td>
+    <td><meter min="0" max="100" low="50" high="60" value="30">30%</meter></td>
+  </tr>
+  <tr>
+    <th>昨日</th>
+    <td>55% (適切です)</td>
+    <td><meter min="0" max="100" low="50" high="60" value="55">55%</meter></td>
+  </tr>
+  <tr>
+    <th>一昨日</th>
+    <td>80% (高すぎます)</td>
+    <td><meter min="0" max="100" low="50" high="60" value="80">80%</meter></td>
+  </tr>
+</table>
+
+
+<table>
+  <caption>中間テストの結果</caption>
+  <tr>
+    <th>山田太郎</th>
+    <td>95点 (優)</td>
+    <td><meter min="0" max="100" optimum="100" low="30" high="80" value="95">95点</meter></td>
+  </tr>
+  <tr>
+    <th>佐藤花子</th>
+    <td>75点</td>
+    <td><meter min="0" max="100" optimum="100" low="30" high="80" value="75">75点</meter></td>
+  </tr>
+  <tr>
+    <th>田中二郎</th>
+    <td>28点 (赤点)</td>
+    <td><meter min="0" max="100" optimum="100" low="30" high="80" value="28">28点</meter></td>
+  </tr>
+</table>
+
+
+
+</body>
+</html>
