@@ -24,7 +24,7 @@
   }
 }
 
-.menu {
+.dieuhuong {
   width: 70%;
   height: 60px;
   background-color: rgba(217, 243, 243, 0.719);
@@ -37,7 +37,7 @@
   text-align: center;
   /* list-style: none; */
 }
-.menu ul li {
+.dieuhuong ul li {
   list-style: none;
   float: right;
   padding: 10px 30px;
@@ -61,7 +61,7 @@
   text-align: center;
   transition: 0.4s;
   animation: quaphai 0.4s forwards;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 .chunho {
   top: 50%;
@@ -69,7 +69,7 @@
   font-family: "Courier New", Courier, monospace;
   transition: 0.4s;
   animation: quaphai 0.4s forwards;
-  animation-delay: 0.7s;
+  animation-delay: 1.2s;
 }
 @-webkit-keyframes quaphai {
   from {
@@ -86,7 +86,7 @@
   right: 10%;
   bottom: -50px;
   transition: 0.4s;
-  animation: dilen 1s forwards;
+  animation: dilen 2s forwards;
 }
 @-webkit-keyframes dilen {
   from {
@@ -108,7 +108,7 @@
   padding: 8px 20px;
   border-radius: 5px;
   animation: quaphai 0.4s forwards;
-  animation-delay: 0.9s;
+  animation-delay: 1.4s;
 }
 .nut a {
   text-decoration: none;
