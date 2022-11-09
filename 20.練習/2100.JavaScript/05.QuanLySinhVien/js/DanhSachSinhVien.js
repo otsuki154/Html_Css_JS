@@ -11,5 +11,5 @@ function DanhSachSinhVien() {
 
   this.suaSinhVien = function (sinhVien) {};
 
-  this.timKiemSinhVien = function (sinhVien) {};
+  this.timKiemSinhVien = function (tenSV) {};
 }
