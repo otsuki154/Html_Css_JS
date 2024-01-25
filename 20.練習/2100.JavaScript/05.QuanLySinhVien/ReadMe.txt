@@ -8,7 +8,7 @@ Quản lý các thông tin sau của sinh viên
     6. Email
 
 Check validation, hiển thị error
- Check empty, lengh, chữ, số, email dùng regex pattern
+Check empty, lengh, chữ, số, email dùng regex pattern
 Xây dựng theo OOP
 Thêm, Xoá, Sửa, Hiển Thị List, tìm kiếm bằng theo tên.
 Lưu và xoá Storage của browser
